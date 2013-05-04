@@ -1,16 +1,6 @@
 <?php
 	require "app/db/db_connect.php";
-
-	function strtotitle($title) {
-        $blacklist = array( 'of','a','the','and','an','or','nor','but','is','then','else', 'at','from','by','on','off','for','in','out','over','to','into','with' );
-        $words = explode(' ', $title);
-        foreach ($words as $key => $word) {
-                if ($key == 0 || !in_array($word, $blacklist))
-                        $words[$key] = ucfirst($word);
-        } 
-        $newtitle = implode(' ', $words);
-        return $newtitle;
-}
+	require "utils/string_functions.php";
 
 	$dbconnect = NEW DB_Class('when_I_am_dictator', 'root', 'root');
 	$query = "SELECT *  FROM wiad_fuckers WHERE is_live = 1 ORDER BY RAND() limit 0,1";
@@ -26,10 +16,15 @@
 
   		$fucker_link = $value['fucker_link'];
 		if (is_null($fucker_link) || $fucker_link == ""){
-			echo strtotitle($the_fucker);
+			$str = finishyourfuckingsentences($the_fucker);
+			$str = strtotitle($str);
+			//$str .= "id='thedictator' Mike Hill";
+			echo $str;
 		}else{
-			$the_fucker = "<a href= '$fucker_link' target='_blank'>" . $the_fucker . "</a>";
-			echo strtotitle($the_fucker);
+			$str = finishyourfuckingsentences($the_fucker);
+			$str = strtotitle($str);
+			$str = "<a href= '$fucker_link' target='_blank'>" . $str . "</a>";
+			echo $str;
 		}
   	}
 ?>
