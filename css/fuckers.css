@@ -1,0 +1,81 @@
+
+body{
+	
+	margin-left:12.5%;
+	margin-top:50px;
+	/*color:#222;*/
+	background-color:#eeeeee;
+	width:75%;
+}
+
+p{
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:60px;
+	font-weight:800;
+	color:#222;
+	line-height:60px;
+	/*text-transform:uppercase;*/
+}
+
+dt{
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:60px;
+	font-weight:800;
+	color:#222;
+	line-height:60px;
+
+}
+
+dl{
+	font-family:Helvetica,Arial,sans-serif;
+	font-size:28px;
+	font-weight:800;
+	color:#222;
+	line-height:42px;
+	/*text-transform:uppercase;*/
+}
+
+#refresh p{
+	font-size:16px;
+	line-height:20px;
+}
+
+#grumpyfucker{
+	font-family:Helvetica,arial,sans-serif;
+	font-size:12px;
+	position:fixed;
+	bottom:5px;
+	right:25px;
+	
+}
+#grumpyfucker a{
+	color: #d44573;
+}
+
+#leftbutton{
+	color: #d44573;
+}
+
+#rightbutton{
+	/*margin-left: 10px;*/
+	color: #d44573;
+}
+
+#submitafucker{
+	/*margin-left: 10px;*/
+	color: #aaaaaa;
+}
+
+#facebook {
+	position: fixed;
+	bottom: 25px;
+	right: 85px;
+}
+
+a:link{color:#222;text-decoration:none;font-weight:800;}
+
+a:active{color:#222;text-decoration:none;}
+
+a:hover{color:#222;text-decoration:underline;}
+
+a:visited{color:#222;text-decoration:none;}
