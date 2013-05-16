@@ -34,6 +34,10 @@
 		</p>
 	</div>
 
+	<div id='league_table'>
+		Here we go.
+	</div>
+
 	<div id="grumpyfucker">
 		This daily fucking rant was brought to you by <a href="http://www.holler.com.au">One Seriously Grumpy Fucker</a> and was inspired by these <a href="http://www.whatthefuckshouldimakefordinner.com" target='_blank'>Fuckers</a>.
 	</div>
